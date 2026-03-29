@@ -1,6 +1,7 @@
 # E-Waste India — Electronic Waste: Where Do We Stand?
 
-A data-driven awareness website built for the **CHE-110 Environmental Studies CA1 project** at **Lovely Professional University (LPU)**.
+> **⚠️ NOTE: This repository constitutes a university assignment.** This is a data-driven awareness website built specifically as an academic project for the **CHE-110 Environmental Studies CA1** assessment at **Lovely Professional University (LPU)**.
+
 
 ## Project Info
 
