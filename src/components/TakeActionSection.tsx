@@ -61,7 +61,7 @@ const TakeActionSection = () => (
               className="w-full max-h-[520px] object-contain"
               poster=""
             >
-              <source src="/e-waste-india/The_Toxic_Treasure_Paradox.mp4" type="video/mp4" />
+              <source src="The_Toxic_Treasure_Paradox.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
