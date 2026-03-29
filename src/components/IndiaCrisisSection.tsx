@@ -71,6 +71,8 @@ const IndiaCrisisSection = () => (
           <p className="text-[11px] text-ewaste-muted/50 mt-3">Source: IIT Delhi Study, 2022 | WHO</p>
         </div>
       </AnimatedSection>
+
+      <EWasteCalculator />
     </div>
   </section>
 );

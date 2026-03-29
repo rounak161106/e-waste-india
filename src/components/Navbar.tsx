@@ -6,6 +6,7 @@ const navLinks = [
   { label: "India", href: "#india" },
   { label: "Impacts", href: "#impacts" },
   { label: "Solutions", href: "#solutions" },
+  { label: "Quiz", href: "#quiz" },
   { label: "Case Studies", href: "#cases" },
   { label: "Act Now", href: "#action" },
 ];
@@ -13,10 +14,23 @@ const navLinks = [
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
-    const handler = () => setScrolled(window.scrollY > 50);
-    window.addEventListener("scroll", handler);
+    const handler = () => {
+      setScrolled(window.scrollY > 50);
+
+      const sections = navLinks.map((l) => l.href.slice(1));
+      let current = "";
+      for (const id of sections) {
+        const el = document.getElementById(id);
+        if (el && el.getBoundingClientRect().top <= 120) {
+          current = id;
+        }
+      }
+      setActiveSection(current);
+    };
+    window.addEventListener("scroll", handler, { passive: true });
     return () => window.removeEventListener("scroll", handler);
   }, []);
 
@@ -29,9 +43,17 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         <a href="#" className="text-ewaste-green font-heading font-bold text-lg">⚡ E-Waste India</a>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-6 lg:gap-8">
           {navLinks.map((l) => (
-            <a key={l.href} href={l.href} className="text-sm text-ewaste-muted hover:text-foreground transition-colors">
+            <a
+              key={l.href}
+              href={l.href}
+              className={`text-sm transition-colors ${
+                activeSection === l.href.slice(1)
+                  ? "text-ewaste-green font-semibold"
+                  : "text-ewaste-muted hover:text-foreground"
+              }`}
+            >
               {l.label}
             </a>
           ))}
@@ -53,7 +75,9 @@ const Navbar = () => {
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="block py-3 text-sm text-ewaste-muted hover:text-foreground transition-colors border-b border-white/5"
+              className={`block py-3 text-sm transition-colors border-b border-white/5 ${
+                activeSection === l.href.slice(1) ? "text-ewaste-green font-semibold" : "text-ewaste-muted hover:text-foreground"
+              }`}
             >
               {l.label}
             </a>
