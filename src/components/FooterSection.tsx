@@ -43,7 +43,7 @@ const FooterSection = () => (
         <div className="text-xs text-ewaste-muted/70 space-y-1">
           <p>CHE-110 | Environmental Studies</p>
           <p>Lovely Professional University</p>
-          <p>Academic Year 2024–25 | CA1 Project</p>
+          <p>Academic Year 2025–26 | CA1 Project</p>
           <p className="text-ewaste-muted/60 mt-2">Rounak Prasad, Tushar Kadian, Rahul Panwar</p>
         </div>
       </div>
@@ -51,7 +51,7 @@ const FooterSection = () => (
 
     <div className="border-t border-white/5 pt-4">
       <p className="text-center text-[11px] text-ewaste-muted/40">
-        © 2025 E-Waste India | For educational purposes | All statistics from peer-reviewed and government sources
+        © 2026 E-Waste India | For educational purposes | All statistics from peer-reviewed and government sources
       </p>
     </div>
   </footer>

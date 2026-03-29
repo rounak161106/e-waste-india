@@ -7,7 +7,7 @@
 
 - **Course:** CHE-110 | Environmental Studies
 - **University:** Lovely Professional University
-- **Academic Year:** 2024–25 | CA1 Project
+- **Academic Year:** 2025–26 | CA1 Project
 - **Team:** Rounak Prasad, Tushar Kadian, Rahul Panwar
 
 ## About
