@@ -1,4 +1,5 @@
 import AnimatedSection from "./AnimatedSection";
+import EWasteCalculator from "./EWasteCalculator";
 
 const stats = [
   { value: "3rd Largest", sub: "e-waste producer globally", color: "border-ewaste-orange/50 text-ewaste-orange" },
@@ -70,6 +71,8 @@ const IndiaCrisisSection = () => (
           <p className="text-[11px] text-ewaste-muted/50 mt-3">Source: IIT Delhi Study, 2022 | WHO</p>
         </div>
       </AnimatedSection>
+
+      <EWasteCalculator />
     </div>
   </section>
 );
