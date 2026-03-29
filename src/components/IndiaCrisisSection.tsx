@@ -1,4 +1,5 @@
 import AnimatedSection from "./AnimatedSection";
+import EWasteCalculator from "./EWasteCalculator";
 
 const stats = [
   { value: "3rd Largest", sub: "e-waste producer globally", color: "border-ewaste-orange/50 text-ewaste-orange" },
