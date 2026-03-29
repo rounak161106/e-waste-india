@@ -42,13 +42,32 @@ const TakeActionSection = () => (
       </AnimatedSection>
 
       <AnimatedSection delay={0.4}>
-        <div className="glass-card p-8 mt-8 text-center border border-white/5">
-          <span className="text-4xl">🎬</span>
-          <h3 className="font-heading font-bold text-xl mt-4">Watch Our Full Documentary</h3>
-          <p className="text-sm text-ewaste-muted mt-2">Electronic Waste — Where Do We Stand? | LPU CHE-110 CA1</p>
-          <div className="mt-4 border-2 border-dashed border-white/10 rounded-lg p-8 text-ewaste-muted/40 text-sm">
-            [ Video embed — replace with actual YouTube/Instagram link after uploading ]
+        <div className="glass-card p-6 sm:p-8 mt-8 border border-ewaste-green/10">
+          <div className="flex items-center gap-3 mb-2">
+            <span className="text-3xl">🎬</span>
+            <div>
+              <h3 className="font-heading font-bold text-xl">The Toxic Treasure Paradox</h3>
+              <p className="text-xs text-ewaste-muted mt-0.5">Documentary | LPU CHE-110 CA1 | Environmental Studies</p>
+            </div>
           </div>
+          <p className="text-sm text-ewaste-muted mb-4">
+            Our team-produced documentary explores the hidden crisis of electronic waste in India —
+            from the toxic dumps of Delhi to the economic opportunity in responsible recycling.
+          </p>
+          <div className="relative rounded-xl overflow-hidden border border-white/10 bg-black">
+            <video
+              controls
+              preload="metadata"
+              className="w-full max-h-[520px] object-contain"
+              poster=""
+            >
+              <source src="/e-waste-india/The_Toxic_Treasure_Paradox.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <p className="text-[11px] text-ewaste-muted/40 mt-3 text-center">
+            Produced by Rounak Prasad, Tushar Kadian &amp; Rahul Panwar · LPU CHE-110 CA1 · 2025
+          </p>
         </div>
       </AnimatedSection>
     </div>
