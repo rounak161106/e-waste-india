@@ -44,7 +44,7 @@ const FooterSection = () => (
           <p>CHE-110 | Environmental Studies</p>
           <p>Lovely Professional University</p>
           <p>Academic Year 2025–26 | CA1 Project</p>
-          <p className="text-ewaste-muted/60 mt-2">Rounak Prasad, Tushar Kadian, Rahul Panwar</p>
+          <p className="text-ewaste-muted/60 mt-2">Rounak Prasad, Tushar Kadian</p>
         </div>
       </div>
     </div>
