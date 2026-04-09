@@ -66,7 +66,7 @@ const TakeActionSection = () => (
             </video>
           </div>
           <p className="text-[11px] text-ewaste-muted/40 mt-3 text-center">
-            Produced by Rounak Prasad &amp; Tushar Kadian · LPU CHE-110 CA1 · 2026
+            Produced by Rounak Prasad, Tushar Kadian &amp; Rahul Panwar · LPU CHE-110 CA1 · 2026
           </p>
         </div>
       </AnimatedSection>
